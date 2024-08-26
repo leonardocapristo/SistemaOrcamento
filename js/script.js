@@ -98,7 +98,13 @@ function calculate() {
         <p>Custo da tinta: R$ ${priceTinta.toFixed(2)}</p>
         <p>Custo da caixa de correio: R$ ${totalCostCaixasCorreio.toFixed(2)}</p>
         <p>Custo da fechadura: R$ ${totalCostFechaduras.toFixed(2)}</p>
+
+        <h4>Despesas Fixas: </h4>
+        <p>R$ ${despesasFixas.toFixed(2)}</p>
+        
         <p class="total-cost">Custo total: R$ ${totalCost.toFixed(2)}</p>
         <p class="total-cost">Valor total de venda: R$ ${totalVenda.toFixed(2)}</p>
+
+
     `;
 }
