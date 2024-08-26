@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cálculo de Barras de Portão</title>
+    <title>Orçamento</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <nav>
         <ul>
-            <li><a href="index.html">Calculadora de Barras</a></li>
+            <li><a href="index.html">Orçamento</a></li>
             <li><a href="calculo-vao.html">Calculadora de Vão</a></li>
         </ul>
     </nav>
 
     <div class="container">
-        <h1>Cálculo de Barras de Portão</h1>
+        <h1>Orçamento</h1>
         
         <form id="calcForm">
             <div class="input-group">
@@ -31,14 +31,6 @@
                 <input type="number" id="chapa" name="chapa" min="0" required>
             </div>
             <div class="input-group">
-                <label for="caixaCorreio">Quantidade de caixas de correio:</label>
-                <input type="number" id="caixaCorreio" name="caixaCorreio" min="0" required>
-            </div>
-            <div class="input-group">
-                <label for="fechadura">Quantidade de fechaduras:</label>
-                <input type="number" id="fechadura" name="fechadura" min="0" required>
-            </div>
-            <div class="input-group">
                 <label for="kit">Tipo de Kit:</label>
                 <select id="kit" name="kit" required>
                     <option value="" disabled selected>Selecione um kit</option>
@@ -46,6 +38,19 @@
                     <option value="kit2">Kit 15x18 (R$60)</option>
                     <option value="kit3">Kit 18x18 (R$70)</option>
                 </select>
+            </div>
+            <div class="input-group">
+                <label for="motor">Tipo de Motor:</label>
+                <select id="motor" name="motor" required>
+                    <option value="" disabled selected>Selecione um motor</option>
+                    <option value="motor4">Motor 4 segundos (R$200)</option>
+                    <option value="motor8">Motor 8 segundos (R$250)</option>
+                    <option value="motor16">Motor 16 segundos (R$300)</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="sacosPeso">Quantidade de sacos de peso:</label>
+                <input type="number" id="sacosPeso" name="sacosPeso" min="0" required>
             </div>
             <button type="button" onclick="calculate()">Calcular</button>
         </form>

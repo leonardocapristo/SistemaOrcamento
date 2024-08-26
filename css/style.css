@@ -1,3 +1,4 @@
+/* Estilos gerais do formulário e resultado */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -5,88 +6,96 @@ body {
     padding: 0;
 }
 
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: #007BFF;
-    padding: 10px;
-    color: #fff;
-    z-index: 1000; /* Garante que o menu esteja sobre outros elementos */
+    background-color: #333;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-align: center;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    justify-content: center;
 }
 
-nav li {
-    margin: 0 15px;
+nav ul li {
+    display: inline;
+    margin-right: 20px;
 }
 
-nav a {
-    color: #fff;
+nav ul li a {
+    color: #ffffff;
     text-decoration: none;
-    padding: 10px;
+    font-weight: bold;
 }
 
-nav a:hover {
-    background: #0056b3;
-    border-radius: 4px;
-}
-
-.container {
-    width: 80%;
-    max-width: 600px;
-    margin: 80px auto 20px; /* Adiciona margem superior para evitar sobreposição com o menu fixo */
-    padding: 20px;
-    background: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
 h1 {
-    text-align: center;
-    margin-bottom: 20px;
+    color: #333;
 }
 
 .input-group {
     margin-bottom: 15px;
 }
 
-label {
+.input-group label {
     display: block;
     margin-bottom: 5px;
+    font-weight: bold;
 }
 
-input[type="number"], select {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #ccc;
+.input-group input,
+.input-group select {
+    width: calc(100% - 16px);
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
     border-radius: 4px;
 }
 
 button {
-    width: 100%;
-    padding: 10px;
-    background-color: #007BFF;
-    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #ffffff;
     border: none;
     border-radius: 4px;
-    cursor: pointer;
 }
 
 button:hover {
     background-color: #0056b3;
 }
 
+/* Estilos do resultado */
 .result {
     margin-top: 20px;
-    font-size: 18px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.result p {
+    margin: 10px 0;
+}
+
+/* Destaque para o custo total */
+.total-cost {
     font-weight: bold;
-    text-align: center;
+    font-size: 1.2em;
+    color: #e74c3c; /* Cor vermelha para ênfase */
 }
