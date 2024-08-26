@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Barras de Portão</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Calculadora de Barras</a></li>
+            <li><a href="calculo-vao.html">Calculadora de Vão</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Cálculo de Barras de Portão</h1>
+        
+        <form id="calcForm">
+            <div class="input-group">
+                <label for="bars30x20">Quantidade de barras 30x20:</label>
+                <input type="number" id="bars30x20" name="bars30x20" min="0" required>
+            </div>
+            <div class="input-group">
+                <label for="bars60x40">Quantidade de barras 60x40:</label>
+                <input type="number" id="bars60x40" name="bars60x40" min="0" required>
+            </div>
+            <div class="input-group">
+                <label for="chapa">Quantidade de chapas de ferro:</label>
+                <input type="number" id="chapa" name="chapa" min="0" required>
+            </div>
+            <div class="input-group">
+                <label for="caixaCorreio">Quantidade de caixas de correio:</label>
+                <input type="number" id="caixaCorreio" name="caixaCorreio" min="0" required>
+            </div>
+            <div class="input-group">
+                <label for="fechadura">Quantidade de fechaduras:</label>
+                <input type="number" id="fechadura" name="fechadura" min="0" required>
+            </div>
+            <div class="input-group">
+                <label for="kit">Tipo de Kit:</label>
+                <select id="kit" name="kit" required>
+                    <option value="" disabled selected>Selecione um kit</option>
+                    <option value="kit1">Kit 15x15 (R$50)</option>
+                    <option value="kit2">Kit 15x18 (R$60)</option>
+                    <option value="kit3">Kit 18x18 (R$70)</option>
+                </select>
+            </div>
+            <button type="button" onclick="calculate()">Calcular</button>
+        </form>
+
+        <div id="result" class="result">
+            <!-- O resultado será exibido aqui -->
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

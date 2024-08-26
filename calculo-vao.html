@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Vão</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Calculadora de Barras</a></li>
+            <li><a href="calculo-vao.html">Calculadora de Vão</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Calculadora de Vão</h1>
+        
+        <form id="calculoVaoForm">
+            <div class="input-group">
+                <label for="largura">Largura do Vão (em metros):</label>
+                <input type="number" id="largura" name="largura" step="0.01" min="0" required>
+            </div>
+            <div class="input-group">
+                <label for="altura">Altura do Vão (em metros):</label>
+                <input type="number" id="altura" name="altura" step="0.01" min="0" required>
+            </div>
+            <button type="button" onclick="calculateVao()">Calcular</button>
+        </form>
+
+        <div id="resultVao" class="result">
+            <!-- O resultado será exibido aqui -->
+        </div>
+    </div>
+
+    <script src="js/scriptVao.js"></script>
+</body>
+</html>
